@@ -5,10 +5,48 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Assignment</title>
+    
+    <link rel="stylesheet" href="css/main.css">
+    
+    <style>
+        .square-list {
+            list-style-type: square;
+        }
+
+        .square-list li:nth-child(odd) {
+            list-style-type: square;
+            background-color:cornflowerblue;
+        }
+    </style>
+
+    <style>
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        
+        nav a {
+            text-decoration: none;
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: rgb(217, 217, 104);
+            border: 2px solid #b50a0a;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover,
+        nav a:focus {
+            background-color: darkgoldenrod;
+        }
+
+    </style>
+
+    
 </head>
 <body>
     <header>
-        <h1>Sara Mohsenpour</h1>
+        <h1 class="site-title">Sara Mohsenpour</h1>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -27,14 +65,14 @@
 
         <h2>About Me</h2>
 
-            <img src="images/Sara2.jpg" alt="My picture when I graduated.">
+            <img id="my-image" src="images/sara.jpg" alt="My picture when I graduated.">
 
         <p>My name is <strong>Sara Mohsenpour</strong>. I am Iranian citizen and started studying “<abbr title="Interactive Media Design">IMD</abbr>” in May 2023 at Algonquinc College. 24 years ago I was studying agriculture and animal science at Urmia University. It was a very good job and had a very good income. The only downside was that I worked two days a week and I was free and bored the rest of the week. So I decided to do something completely different. That's how I got into publishing.</p>
         <p>When I was a kid, I never guessed that I would study and work on such irrelevant subjects someday. Back then, I only liked cows because they were so big and they made strange noises. The second thing I liked was sitting in the attic of my grandfather's house and reading old and strange stories. Now my life seems to be divided between cows and stories. </p>
         
         <h3>My Hobies</h3>
         <p>There are many things I like in this world, but I'll tell you just a few:</p>
-        <ul>
+        <ul class="square-list">
             <li>Painting on canvas</li>
             <li>Watching classic movies on holidays</li>
             <li>Eating chips with a lot of noise, when it's quiet everywhere.</li>
