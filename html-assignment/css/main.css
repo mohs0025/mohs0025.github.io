@@ -8,6 +8,7 @@ body {
     font-size: 18px;
 }
 
+rhri
 
 
 /* Targeting multiple elements
@@ -42,28 +43,6 @@ header, footer {
 .square-list li:nth-child(odd) {
     list-style-type: square;
     background-color:cornflowerblue;
-}
-
-/* Style the navigation */
-
-nav ul {
-    list-style: none;
-    padding: 0;
-}
-
-nav a {
-    text-decoration: none;
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: rgb(217, 217, 104);
-    border: 2px solid #b50a0a;
-    transition: background-color 0.3s;
-}
-
-
-nav a:hover,
-nav a:focus {
-    background-color: darkgoldenrod;
 }
 
 
