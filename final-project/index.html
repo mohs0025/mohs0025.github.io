@@ -13,7 +13,7 @@
 
     <header>
         <!-- creat nav -->
-        <!-- where is the correct place for logo? -->
+        
         <div class="wrapper">
             <img src="images/logo.png" alt="stars logo">
 
@@ -24,11 +24,13 @@
                     <li><a href="services">Services</a></li>
                     <li><a href="team">Team</a></li>
                     <li><a href="contact">Contact</a></li>
-                     <!-- is it a correct way for placing a shape?-->
-                    <form action="#" method="get">
+                     <!-- <form action="#" method="get">
                         <input type="text" name="search" placeholder="Search">
                         <button type="submit">&#128269</button>
-                    </form>
+                    </form> -->
+                    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"       rel="stylesheet">
+                    <label for="searchBox"></label> 
+                    <input type="search" id="searchBox" name="q" placeholder="Search"/>                    <button type="submit"><span class="material-icons-outlined">search</span></button>
                 </ul>
             </nav>
         </div>
@@ -53,15 +55,20 @@
 
     <main>
         <!-- everything for banner -->
-        <!-- check the order!  -->
-        <!-- is it a right place? between header and main? -->
+        
         <section id="welcome" class="main-banner" >
             <div class="wrapper">
                 <img src="images/main-banner.jpg" alt="Three Star Media office">
                 <div class="banner-text">
                     <h1>Welcome to Three Star Media</h1>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam corrupti laborum exercitationem consequuntur iste voluptas optio obcaecati sequi quasi? Tempore totam eos explicabo minima? Quos sapiente aliquid adipisci numquam veniam.</p>
-                    <a class="btn" href="#">Connect with us</a>
+                    <!-- <a class="btn" href="#">Connect with us</a> -->
+                    <div class="btn-connectwithus"> 
+                        <a class="btn" href="#">Connect with us</a> 
+                        <span class="material-icons-outlined"> 
+                            play_arrow</span> 
+                    </div>
+
                 </div>
             </div>
         </section>
@@ -70,7 +77,7 @@
 
 
         <!-- creat a New section for "About Us" -->
-        <!-- what about the class? it must be different from others?why? -->
+        
         <section id="about-us">
             <div class="wrapper introduction">
                 <img src="images/about-us.jpg" alt="Pink Punk Table">
@@ -92,7 +99,12 @@
                         <img class="digital" src="images/digital.jpg" alt="Working simultaneously with laptop and mobile">
                         <h3>Digital Transformation</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, maxime quidem perspiciatis voluptas accusamus rerum libero, modi recusandae minima quaerat tempore laborum iure, odit deserunt voluptate facilis eum labore illo!</p>
-                        <a class="btn" href="#">Digital Plans</a>
+                        <!-- <a class="btn" href="#">Digital Plans</a> -->
+                        <div class="btn-digitalplans"> 
+                            <a class="btn" href="#">Digital Plans</a> 
+                            <span class="material-icons-outlined"> 
+                                play_arrow</span> 
+                        </div>
                     </article>
 
 
@@ -100,7 +112,12 @@
                         <img class="marketing" src="images/marketing.jpg" alt="Laptop on the table">
                         <h3>Marketing</h3>
                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam harum at, excepturi, illum, animi ad voluptates numquam dicta ipsum doloribus nam commodi vitae tenetur eum? Cum assumenda asperiores ducimus et.</p>
-                        <a class="btn" href="#">Marketing Plans</a>
+                        <!-- <a class="btn" href="#">Marketing Plans</a> -->
+                        <div class="btn-Marketing"> 
+                            <a class="btn" href="#">Marketing Plans</a> 
+                            <span class="material-icons-outlined"> 
+                                play_arrow</span> 
+                        </div>
                     </article>
 
 
@@ -108,7 +125,12 @@
                         <img class="video" src="images/video.jpg" alt="Watching YouTube on mobile">
                         <h3>Video Production</h3>
                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam harum at, excepturi, illum, animi ad voluptates numquam dicta ipsum doloribus nam commodi vitae tenetur eum? Cum assumenda asperiores ducimus et.</p>
-                        <a class="btn" href="#">Video Plans</a>
+                        <!-- <a class="btn" href="#">Video Plans</a> -->
+                        <div class="btn-Video"> 
+                            <a class="btn" href="#">Video Plans</a> 
+                            <span class="material-icons-outlined"> 
+                                play_arrow</span> 
+                        </div>
                     </article>
 
 
@@ -116,7 +138,12 @@
                         <img class="web" src="images/web.jpg" alt="Pen, phone and notebook">
                         <h3>Web Development</h3>
                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam harum at, excepturi, illum, animi ad voluptates numquam dicta ipsum doloribus nam commodi vitae tenetur eum? Cum assumenda asperiores ducimus et.</p>
-                        <a class="btn" href="#">Web Plans</a>
+                        <!-- <a class="btn" href="#">Web Plans</a> -->
+                        <div class="btn-web"> 
+                            <a class="btn" href="#">Web Plans</a> 
+                            <span class="material-icons-outlined"> 
+                                play_arrow</span> 
+                        </div>
                     </article>
 
 
@@ -124,7 +151,12 @@
                         <img class="print" src="images/print.jpg" alt="Devices on the side of the street">
                         <h3>print</h3>
                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam harum at, excepturi, illum, animi ad voluptates numquam dicta ipsum doloribus nam commodi vitae tenetur eum? Cum assumenda asperiores ducimus et.</p>
-                        <a class="btn" href="#">Print Plans</a>
+                        <!-- <a class="btn" href="#">Print Plans</a> -->
+                        <div class="btn-print"> 
+                            <a class="btn" href="#">Print Plans</a> 
+                            <span class="material-icons-outlined"> 
+                                play_arrow</span> 
+                        </div>
                     </article>
                 </div>
             </div>
@@ -139,7 +171,12 @@
                 <div class="ads-text">
                     <h1>Our Vision</h1>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam corrupti laborum exercitationem consequuntur iste voluptas optio obcaecati sequi quasi? Tempore totam eos explicabo minima? Quos sapiente aliquid adipisci numquam veniam.</p>
-                    <a class="btn" href="#">Learn More</a>
+                    <!-- <a class="btn" href="#">Learn More</a> -->
+                    <div class="btn-vision"> 
+                        <a class="btn" href="#">Learn More</a> 
+                        <span class="material-icons-outlined"> 
+                            play_arrow</span> 
+                    </div>
                 </div>
             </div>
         </section>
