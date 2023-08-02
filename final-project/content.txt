@@ -1,0 +1,140 @@
+Nav links should link down to the section of the page:
+Home
+About Us
+Services
+Team
+Contact
+
+we have 1 serching box
+
+
+
+Welcom to the.....
+paragraph
+btn
+
+
+
+About Us
+paragraph
+
+
+
+Our Services
+Digital Transformation
+paragraph
+btn
++
+Marketin
+paragraph
+btn
++
+Video Production
+paragraph
+btn
++
+Web Development
+paragraph
+btn
++
+Print
+paragraph
+btn
+
+Our Vision
+pic
+paragraph
+btn
+
+
+
+Our Team
+John Development
+paragraph
+line
+paragraph
++
+Bob Rite
+paragraph
+line
+paragraph
+
+
+
+Contact Us
+Send us a massage
+information's box
++
+Hours of operation
+table
++
+Location
+
+
+
+
+
+---------------------------------
+* {
+    box-sizing: border-box;
+}
+
+/* set for every thing */
+body {
+    background-color: rgb(153, 105, 105);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 1.4;
+
+    margin: 0;
+}
+
+/* set the size of images */
+/* maybe I should add the link of location to it */
+/* /maybe not logo */
+img {
+    width: 100%;
+    height: auto;
+}
+
+
+
+.wrapper {
+    width: 95%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* setting header / mobile */
+header .wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header {
+    background-color: black;
+    color: white;
+    padding: 1rem 0;
+}
+
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+
+    display: flex;
+    gap: 1rem;
+}
+
+
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+
+    display: flex;
+    gap: 1rem;
+}
+
+
