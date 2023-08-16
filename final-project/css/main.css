@@ -1,28 +1,554 @@
-/* * {
-    box-sizing: border-box;
+html{
+  box-sizing: border-box;
 }
+
 
 /* set for every thing */
-/* body {
-    background-color: rgb(153, 105, 105);
+  body {
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     line-height: 1.4;
+      /* font-size: 1.4rem; */
 
-    margin: 0;
-}
- */
-/* set the size of images */
-/* maybe I should add the link of location to it */
-/* /maybe not logo */
-/* img {
-    width: 100%;
-    height: auto;
-} */
-
-
-/* 
-.wrapper {
-    width: 95%;
     max-width: 1200px;
     margin: 0 auto;
-} */ 
+  }
+
+
+/* set images and logo */
+img {
+  width: 100%;
+  height: auto;
+}
+
+
+
+/* set header section */
+  .header-container {
+    display: grid;
+    grid-template-columns: auto 3fr 1fr;
+    grid-gap: 30px;
+    justify-content: center;
+    align-items: center;
+  
+    background-color: #222;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+  .header-container .logo {
+    width: 80px;
+  }
+  .header-container .logo img {
+    width: 100%;
+    flex-shrink: 0;
+  }
+  .header-container nav {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .header-container nav a {
+    flex-shrink: 0;
+    color: #c78c06;
+    padding: 0 10px;
+    height: 40px;
+    line-height: 40px;
+  
+  }
+  .header-container nav a:hover {
+    background-color: #c78c06;
+    color: white;
+    text-align: center;
+  }
+  
+  .header-container .form-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .header-container .form-item input {
+    flex: 1;
+    height: 36px;
+  }
+  .header-container .form-item button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 36px;
+    width: 46px;
+    background-color: #222;
+    border: #c78c06 1px solid;
+  }
+
+
+
+/* seting main banner-welcom */
+h1 {
+  color: white;
+  font-size: 4rem;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+/* Colours values used in the layout #c78c06, #ffe6ac, #222 and white */
+
+.main-banner {
+  background-image: url("../images/main-banner.jpg");
+  height:calc( 100vh - 142px - 80px);
+  display: flex;
+  width: 100%;
+  background-position: center;
+  align-items: center;
+  background-size: cover;
+
+}
+
+/* add transparent */
+.main-banner .transparent {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 3%;
+}
+
+.main-banner .transparent p {
+  color: white;
+  padding-bottom: 10px;
+}
+
+.main-banner .btn-connectus{
+  border: none;
+  display: flex;
+  align-items: center;
+  background-color: #c78b07;
+  padding: 20px;
+  width: 160px;
+}
+.main-banner .btn-connectus a {
+  color: #222;
+}
+
+
+/* setting about us section */
+/* coloring background - about us */
+
+/* space above-image about */
+.about-text {
+  background-color: #ffe6ac;
+  margin: 0; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;  
+}
+
+.about-img {
+  margin-top: 15px;
+}
+
+.about-text img {
+  width: 50%;
+}
+
+.about-text div {
+  width: 50%;
+  padding: 20px;
+}
+
+
+/* setting for our services */
+
+.five-container {
+  padding: 60px;
+  margin: auto;
+}
+
+.five-container h2 {
+  margin-top: 30px;
+}
+
+.wrapper h3 {
+  font-size: 1.5rem;
+  line-height: 20px;
+  margin-top: 30px;
+  font-weight: bold;
+  
+  padding-bottom: 0;
+}
+
+
+.five-container div {
+  display: grid;
+  grid-gap: 10px;
+  margin-bottom: 10px;
+}
+
+.five-container .services-grid {
+  grid-template-columns: 1fr 1fr;
+}
+.five-container .three-container-article {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.five-container div article {
+  background-color: #ffe6ac;
+}
+
+/* services button */
+.five-container div .border-button {
+  background-color: #222;
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+}
+
+.five-container div .border-button a,
+i {
+  color: white;
+}
+
+
+.five-container div h3,p,.border-button{
+  margin:15px 10px;
+}
+
+
+
+/* set banner */
+.ads-banner{
+  background-image: url("../images/vision.jpg");
+  background-size: cover;
+  background-position: center;
+  
+  color: white;
+  padding-left: 10px;
+  padding: 20px;
+
+}
+.ads-banner .btn-learnmore{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 50px;
+  width: 150px;
+  background-color: #0e253e;
+}
+.ads-banner h3{
+  font-weight: 700;
+ 
+}
+.ads-banner a{
+  color: white;
+}
+
+
+
+
+
+
+
+
+/* setting for our team */
+
+.team-text {
+  padding: 0 60px;
+}
+
+.team-text h2 {
+  margin-top: 30px;
+}
+
+.team-text h3 {
+  font-size: 1.5rem;
+  line-height: 3px;
+  margin-top: 30px;
+  margin-bottom: 2px;
+  padding-bottom: 0;
+}
+
+
+.team-text > div {
+  background-color: #ffe6ac;
+  display: flex;
+
+}
+.team-text div.BobR {
+  flex-direction: row-reverse;
+}
+.team-text div img {
+  width: 50%;
+}
+.team-text div div {
+  align-self: start;
+  padding: 20px;
+}
+
+.team-text div h3,p {
+  margin:15px 10px;
+}
+
+/* set border for lines */
+.team-text p strong {
+  display: inline-block;
+  border-bottom: 2px solid #c78c06;
+  text-align: left;
+  width: 100%; 
+  margin: 0; 
+  padding: 0; 
+  font-weight: bold;
+}
+
+
+
+
+/* set for contact us */
+
+.contact-text {
+  margin: auto;
+  padding: 0 60px;
+}
+
+.contact-text > h2 {
+  margin-top: 30px;
+}
+
+
+.contact-text h3 {
+  font-size: 1.5rem;
+  line-height: 25px;
+  margin-top: 30px;
+  
+  padding-bottom: 30px;
+}
+
+.contact-text .flex-contact-form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Both columns are 50% width */
+  grid-gap: 20px;
+}
+
+/* set the forms */
+ .contact-text .flex-contact-form form input {
+  width: 100%;
+  margin-bottom: 10px;
+}
+.contact-text .flex-contact-form form button{
+  background-color: #222;
+  color: #c78b07;
+  border: none;
+  padding: 6px 20px;
+}
+.contact-text .flex-contact-form .messageinput{
+  height: 50px;
+  margin-bottom: 20px;
+}
+
+
+
+/* seting location fram */
+iframe {
+  width: 99%;
+}
+   
+/* set for table */
+table {
+  width: 99%;
+  height: 10rem;
+}
+
+/* Style for the first row */
+table tr:first-child th {
+    background-color: rgb(255, 230, 172);
+    text-align: center;
+}
+
+
+/* Styles for the second and third rows */
+table tr:nth-child(2n) th,
+table tr:nth-child(2n) td, 
+table tr:nth-child(3n) th,
+table tr:nth-child(3n) td {
+    text-align: left;
+}
+
+/* Add space between cell text and cell border */
+table th,
+table td {
+    padding: 10px; /* Adjust the value as needed */
+    font-weight: normal; /* Set the font weight to regular */
+
+}
+
+
+  /* Adjust footer */
+  footer {
+    padding: 10px;
+    background-color: black;
+    color: rgb(198, 141, 0);
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+  }  
+
+  footer a {
+  color: rgb(198, 141, 0);
+  }
+
+
+
+/* setting small screen size -header*/
+
+@media screen and (max-width: 760px) {
+  .header-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    grid-gap: 0px;
+    padding: 10px;
+  }
+
+  .header-container nav a:hover {
+    background-color: #c78c06;
+    color: white;
+    width: 96%;
+    text-align: center;
+  }
+  
+  .header-container .logo {
+    display: grid;
+    grid-template-columns: 100px auto;
+    width: 100%;
+    background-color: #c78c06;
+  }
+
+  .header-container nav {
+    display: flex;
+    flex-direction: column;
+  
+    width: 100%;
+    align-items: center;
+  }
+  
+
+  .header-container form {
+    width: 100%;
+  }
+
+  .header-container .form-item {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+  }
+
+  .header-container .form-item input {
+    flex: 1;
+    height: 36px;
+  }
+
+  .header-container .form-item button {
+    display: flex;
+    background-color: #222;
+    border: #c78c06 1px solid;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    height: 36px;
+    width: 46px;
+    
+  }
+  .header-container .form-item button .icon-style {
+    color: #c78c06;
+    font-size: 34px;
+  }
+
+
+
+  
+
+
+/*  small screen - about us */
+
+
+  .about-text {
+    flex-direction: column;
+  }
+  .about-text img {
+    width: 100%;
+  }
+  
+  .about-text div {
+    width: 95%;
+    /* padding: 20px; */
+  }
+
+
+/*small screen - our services */
+
+.five-container {
+  margin: auto;
+  padding: 0 10px;
+}
+
+
+.five-container .services-grid {
+    grid-template-columns: 1fr;
+  }
+.five-container .three-container-article {
+    grid-template-columns: 1fr;
+  }
+
+
+ .five-container div .border-button {
+ width: 40%;
+ }
+
+/*small screen- our team */
+  
+.team-text {
+  margin: auto;
+  padding: 0 10px;
+}
+  .team-text > div {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* align-items: center; */
+    background-color: #ffe6ac;
+    margin-bottom: 20px;
+  }
+  .team-text div img {
+    width: 100%;
+  }
+  .team-text div.BobR {
+    flex-direction:column;
+  }
+
+
+/* small scren- contact us */
+
+ .contact-text {
+    margin: auto;
+    padding: 0 10px;
+  }
+  .contact-text .flex-contact-form {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 0px;
+   }
+
+   /* small screen location */
+   iframe{
+    width: 100%;
+   }
+}
